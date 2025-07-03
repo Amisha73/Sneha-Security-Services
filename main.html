@@ -1,171 +1,498 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sneha Security Services</title>
     <!-- favicon -->
-     <link rel="shortcut icon" href="./images/favicon.webp" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./images/favicon.jpeg"
+      type="image/x-icon"
+    />
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- AOS Library CSS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#0f172a',
-                        secondary: '#1e40af',
-                        accent: '#1e3a8a',
-                    },
-                    fontFamily: {
-                        'poppins': ['Poppins', 'sans-serif'],
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#0f172a",
+              secondary: "#1e40af",
+              accent: "#1e3a8a",
+            },
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
     </script>
-</head>
+  </head>
 
-<body class="font-poppins text-gray-800 bg-gray-50">
+  <body class="font-poppins text-gray-800 bg-gray-50">
     <!-- Header/Navigation -->
     <header class="sticky top-0 z-50 bg-white shadow-md">
-        <nav class="container mx-auto px-4 py-3 flex items-center justify-between">
-            <div class="flex items-center">
-                <a href="#" class="text-2xl font-bold text-primary">𝕾𝖓𝖊𝖍𝖆 𝕾𝖊𝖈𝖚𝖗𝖎𝖙𝖞 𝕾𝖊𝖗𝖛𝖎𝖈𝖊𝖘</a>
-            </div>
-            <div class="md:hidden">
-                <button id="mobile-menu-button" class="text-gray-500 hover:text-primary focus:outline-none">
-                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-            <ul class="hidden md:flex space-x-8">
-                <li><a href="#home" class="text-gray-600 hover:text-secondary font-medium transition duration-300">Home</a></li>
-                <li><a href="#about" class="text-gray-600 hover:text-secondary font-medium transition duration-300">About</a></li>
-                <li><a href="#services" class="text-gray-600 hover:text-secondary font-medium transition duration-300">Services</a></li>
-                <li><a href="#features" class="text-gray-600 hover:text-secondary font-medium transition duration-300">Why Us</a></li>
-                <li><a href="#contact" class="text-gray-600 hover:text-secondary font-medium transition duration-300">Contact</a></li>
-            </ul>
-        </nav>
+      <nav
+        class="container mx-auto px-4 py-3 flex items-center justify-between"
+      >
+        <div class="flex items-center">
+          <a href="#" class="text-2xl font-bold text-primary"
+            >𝕾𝖓𝖊𝖍𝖆 𝕾𝖊𝖈𝖚𝖗𝖎𝖙𝖞 𝕾𝖊𝖗𝖛𝖎𝖈𝖊𝖘</a
+          >
+        </div>
+        <div class="md:hidden">
+          <button
+            id="mobile-menu-button"
+            class="text-gray-500 hover:text-primary focus:outline-none"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <ul class="hidden md:flex space-x-8">
+          <li>
+            <a
+              href="#home"
+              class="text-gray-600 hover:text-secondary hover:font-semibold font-medium transition duration-300"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="text-gray-600 hover:text-secondary hover:font-semibold font-medium transition duration-300"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#services"
+              class="text-gray-600 hover:text-secondary hover:font-semibold font-medium transition duration-300"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="#features"
+              class="text-gray-600 hover:text-secondary hover:font-semibold font-medium transition duration-300"
+              >Why Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="text-gray-600 hover:text-secondary hover:font-semibold font-medium transition duration-300"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="bg-gradient-to-br from-primary to-accent text-white py-20 md:py-28">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row items-center justify-between">
-                <div class="md:w-1/2 mb-12 md:mb-0" data-aos="fade-right" data-aos-duration="1000">
-                    <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">Professional Security Services For Your Peace of Mind</h1>
-                    <p class="text-lg mb-8 text-gray-200">Protecting your assets with highly trained personnel and advanced security solutions since 2005.</p>
-                    <div class="flex flex-wrap gap-4">
-                        <a href="#services" class="bg-white text-primary hover:bg-gray-100 px-6 py-3 rounded-md font-semibold transition duration-300">Our Services</a>
-                        <a href="#contact" class="bg-secondary hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition duration-300">Contact Us</a>
-                    </div>
-                </div>
-                <div class="md:w-1/2" data-aos="fade-left" data-aos-duration="1000">
-                    <img src="https://media.istockphoto.com/id/1311084713/photo/security-guards-monitoring-modern-cctv-cameras-indoors.webp?a=1&b=1&s=612x612&w=0&k=20&c=RBjfmawrijeaJmOTofr3BG4wqr1oRrk5XDixpfzYvnA=" alt="Security Guard" class="rounded-lg shadow-xl w-full h-auto">
-                </div>
+    <section
+      id="home"
+      class="bg-gradient-to-br from-primary to-accent text-white py-20 md:py-28"
+    >
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row items-center justify-between">
+          <div
+            class="lg:w-1/2 mb-12 lg:mb-0"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+              Professional Security Services For Your Peace of Mind
+            </h1>
+            <p class="text-lg mb-8 text-gray-200">
+              Protecting your assets with highly trained personnel and advanced
+              security solutions since 2005.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a
+                href="#services"
+                class="bg-white text-primary hover:bg-gray-100 px-6 py-3 rounded-md font-semibold transition duration-300"
+                >Our Services</a
+              >
+              <a
+                href="#contact"
+                class="bg-secondary hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition duration-300"
+                >Contact Us</a
+              >
             </div>
+          </div>
+          <div class="lg:w-1/2" data-aos="fade-left" data-aos-duration="1000">
+            <img
+              src="https://media.istockphoto.com/id/1311084713/photo/security-guards-monitoring-modern-cctv-cameras-indoors.webp?a=1&b=1&s=612x612&w=0&k=20&c=RBjfmawrijeaJmOTofr3BG4wqr1oRrk5XDixpfzYvnA="
+              alt="Security Guard"
+              class="rounded-lg shadow-xl w-full h-auto"
+            />
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-primary">About Sneha Security Services</h2>
-                <div class="w-20 h-1 bg-secondary mx-auto mb-6"></div>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Your trusted partner in comprehensive security solutions since 2005.</p>
-            </div>
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
-                    <img src="./images/security team1.jpeg" alt="Security Team" class="rounded-lg shadow-lg w-full h-auto">
-                </div>
-                <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
-                    <h3 class="text-2xl font-semibold mb-4 text-primary">Our Story</h3>
-                    <p class="text-gray-600 mb-6">Sneha Security Services was founded with a vision to provide reliable and professional security services to businesses and individuals. With over 18 years of experience, we've established ourselves as a leader in the security industry.</p>
-                    <h3 class="text-2xl font-semibold mb-4 text-primary">Our Mission</h3>
-                    <p class="text-gray-600 mb-6">To deliver exceptional security services that protect our clients' assets while providing peace of mind through our commitment to excellence, integrity, and professionalism.</p>
-                </div>
-            </div>
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-primary">
+            About Sneha Security Services
+          </h2>
+          <div class="w-20 h-1 bg-secondary mx-auto mb-6"></div>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            Your trusted partner in comprehensive security solutions since 2005.
+          </p>
         </div>
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+            <img
+              src="./images/security team1.jpeg"
+              alt="Security Team"
+              class="rounded-lg shadow-lg w-full h-auto"
+            />
+          </div>
+          <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
+            <h3 class="text-2xl font-semibold mb-4 text-primary">Our Story</h3>
+            <p class="text-gray-600 mb-6">
+              Sneha Security Services was founded with a vision to provide
+              reliable and professional security services to businesses and
+              individuals. With over 18 years of experience, we've established
+              ourselves as a leader in the security industry.
+            </p>
+            <h3 class="text-2xl font-semibold mb-4 text-primary">
+              Our Mission
+            </h3>
+            <p class="text-gray-600 mb-6">
+              To deliver exceptional security services that protect our clients'
+              assets while providing peace of mind through our commitment to
+              excellence, integrity, and professionalism.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Services Section -->
     <section id="services" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-primary">Our Security Services</h2>
-                <div class="w-20 h-1 bg-secondary mx-auto mb-6"></div>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Comprehensive security solutions tailored to meet your specific needs.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="100">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-3 text-primary">Security Guards</h3>
-                        <p class="text-gray-600 mb-4">Highly trained security professionals to protect your premises, assets, and personnel.</p>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="200">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-3 text-primary">CCTV Monitoring</h3>
-                        <p class="text-gray-600 mb-4">Advanced video surveillance systems with 24/7 monitoring.</p>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="300">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-3 text-primary">Facility Security</h3>
-                        <p class="text-gray-600 mb-4">Comprehensive security solutions for commercial and residential complexes.</p>
-                    </div>
-                </div>
-            </div>
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-primary">
+            Our Security Services
+          </h2>
+          <div class="w-20 h-1 bg-secondary mx-auto mb-6"></div>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            Comprehensive security solutions tailored to meet your specific
+            needs.
+          </p>
         </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-3 text-primary">
+                Security Guards
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Highly trained security professionals to protect your premises,
+                assets, and personnel.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-3 text-primary">
+                CCTV Monitoring
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Advanced video surveillance systems with 24/7 monitoring.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-3 text-primary">
+                Facility Security
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Comprehensive security solutions for commercial and residential
+                complexes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Why Choose Us Section -->
     <section id="features" class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-primary">Why Choose Sneha Security Services</h2>
-                <div class="w-20 h-1 bg-secondary mx-auto mb-6"></div>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">We're committed to delivering exceptional security services that exceed expectations.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="p-6 bg-gray-50 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="text-xl font-semibold mb-3 text-primary">Professionally Trained Staff</h3>
-                    <p class="text-gray-600">Our personnel undergo rigorous training to ensure high professionalism and reliability.</p>
-                </div>
-                <div class="p-6 bg-gray-50 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="text-xl font-semibold mb-3 text-primary">24/7 Availability</h3>
-                    <p class="text-gray-600">Our services are available round-the-clock to meet security needs anytime.</p>
-                </div>
-                <div class="p-6 bg-gray-50 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="300">
-                    <h3 class="text-xl font-semibold mb-3 text-primary">Customized Solutions</h3>
-                    <p class="text-gray-600">We provide tailored solutions designed to meet your specific requirements.</p>
-                </div>
-            </div>
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-primary">
+            Why Choose Sneha Security Services
+          </h2>
+          <div class="w-20 h-1 bg-secondary mx-auto mb-6"></div>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            We're committed to delivering exceptional security services that
+            exceed expectations.
+          </p>
         </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="p-6 bg-gray-50 rounded-lg shadow-md"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <h3 class="text-xl font-semibold mb-3 text-primary">
+              Professionally Trained Staff
+            </h3>
+            <p class="text-gray-600">
+              Our personnel undergo rigorous training to ensure high
+              professionalism and reliability.
+            </p>
+          </div>
+          <div
+            class="p-6 bg-gray-50 rounded-lg shadow-md"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <h3 class="text-xl font-semibold mb-3 text-primary">
+              24/7 Availability
+            </h3>
+            <p class="text-gray-600">
+              Our services are available round-the-clock to meet security needs
+              anytime.
+            </p>
+          </div>
+          <div
+            class="p-6 bg-gray-50 rounded-lg shadow-md"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <h3 class="text-xl font-semibold mb-3 text-primary">
+              Customized Solutions
+            </h3>
+            <p class="text-gray-600">
+              We provide tailored solutions designed to meet your specific
+              requirements.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
-    
+    <section id="contact" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-3xl md:text-4xl font-bold mb-4 text-center text-primary"
+          data-aos="fade-up"
+        >
+          Contact Us
+        </h2>
+        <p
+          class="text-lg text-center text-gray-600 mb-6"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          Get in touch with us for any inquiries or services
+        </p>
+        <div class="flex flex-col md:flex-row items-start justify-between">
+          <div class="contact-info w-full md:w-1/2 mb-8 md:mb-0">
+            <div class="info-item flex items-center mb-4">
+              <div class="icon email-icon text-2xl text-primary mr-3">
+                <i class="fa fa-envelope"></i>
+              </div>
+              <div class="info-text">
+                <h4 class="font-semibold">Email:</h4>
+                <p class="text-gray-600">snehamaggie07@gmail.com</p>
+              </div>
+            </div>
+            <div class="info-item flex items-center mb-4">
+              <div class="icon phone-icon text-2xl text-primary mr-3">
+                <i class="fa fa-phone"></i>
+              </div>
+              <div class="info-text">
+                <h4 class="font-semibold">Phone:</h4>
+                <p class="text-gray-600">+91 9618686007</p>
+              </div>
+            </div>
+            <div class="info-item flex items-center mb-4">
+              <div class="icon location-icon text-2xl text-primary mr-3">
+                <i class="fa fa-map-marker"></i>
+              </div>
+              <div class="info-text">
+                <h4 class="font-semibold">Location:</h4>
+                <p class="text-gray-600 md:w-2/3">
+                  Flat No. 411, Yaganti Stirlings, Kalyani Nagar 2nd Lane,
+                  Layola Nagar, Guntur, Guntur, AP - 522005
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full md:w-1/2">
+            <form action="#" method="POST">
+              <div class="mb-4">
+                <input
+                  type="text"
+                  class="border border-gray-300 rounded-lg w-full p-3 focus:outline-none focus:ring-2 focus:ring-primary"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <input
+                  type="email"
+                  class="border border-gray-300 rounded-lg w-full p-3 focus:outline-none focus:ring-2 focus:ring-primary"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <textarea
+                  class="border border-gray-300 rounded-lg w-full p-3 focus:outline-none focus:ring-2 focus:ring-primary"
+                  rows="4"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="bg-secondary hover:bg-accent text-white px-4 py-2 rounded-lg w-full transition duration-300"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
-    
+    <footer class="bg-primary text-white">
+      <div
+        class="px-4 py-8 text-center md:flex md:items-center md:justify-between "
+      >
+        <!-- About Section -->
+        <div class="mb-8 md:w-1/2">
+          <h3 class="text-2xl font-bold mb-2">𝕾𝖓𝖊𝖍𝖆 𝕾𝖊𝖈𝖚𝖗𝖎𝖙𝖞 𝕾𝖊𝖗𝖛𝖎𝖈𝖊𝖘</h3>
+          <p class="text-sm mb-4">
+            Empowers unemployed youth through industry-standard security
+            training and job placement assistance.
+          </p>
+          <div class="social-icons flex justify-center space-x-4">
+            <a href="#" class="text-white hover:text-gray-300"
+              ><i class="fab fa-facebook fa-lg"></i
+            ></a>
+            <a href="#" class="text-white hover:text-gray-300"
+              ><i class="fab fa-twitter fa-lg"></i
+            ></a>
+            <a href="#" class="text-white hover:text-gray-300"
+              ><i class="fab fa-github fa-lg"></i
+            ></a>
+            <a href="#" class="text-white hover:text-gray-300"
+              ><i class="fab fa-dribbble fa-lg"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class=" mb-8 md:w-1/2">
+          <h3 class="text-lg font-semibold mb-2">Quick Links</h3>
+          <ul class="space-y-2 text-md">
+            <li><a href="#home" class="hover:underline">Home</a></li>
+            <li><a href="#about" class="hover:underline">About</a></li>
+            <li><a href="#services" class="hover:underline">Services</a></li>
+            <li><a href="#features" class="hover:underline">Why Us</a></li>
+            <li><a href="#contact" class="hover:underline">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class=" mb-8 md:w-1/2">
+          <h3 class="text-lg font-semibold mb-2">Contact Me</h3>
+          <p class="flex items-center justify-center mb-2 text-md">
+            <i class="fas fa-envelope mr-2"></i> snehamaggie07@gmail.com
+          </p>
+          <p class="flex items-center justify-center mb-2  text-md">
+            <i class="fas fa-phone mr-2"></i> +91 9618686007
+          </p>
+          <p class="flex items-center justify-center mb-4 text-md">
+            <i class="fas fa-map-marker-alt mr-2"></i>Guntur, AP - 522005
+          </p>
+          <div class="flex justify-center space-x-4">
+            <a
+              href="mailto:snehamaggie07@gmail.com"
+              class="btn email-btn bg-secondary hover:bg-blue-700 text-white px-4 py-2 rounded-md transition duration-300"
+            >
+              <i class="fas fa-envelope"></i> Email
+            </a>
+            <a
+              href="tel:+919618686007"
+              class="btn call-btn bg-secondary hover:bg-blue-700 text-white px-4 py-2 rounded-md transition duration-300"
+            >
+              <i class="fas fa-phone"></i> Call
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="border border-gray-700 w-11/12 mx-auto">
+
+      <div class="py-3 text-center text-sm">
+        <p>&copy; 2025 Sneha Security Services. All Rights Reserved.</p>
+      </div>
+    </footer>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
+      //   toggle navbar function
+      document
+        .getElementById("mobile-menu-button")
+        .addEventListener("click", function () {
+          const mobileMenu = document.getElementById("mobile-menu");
+          mobileMenu.classList.toggle("hidden");
+          mobileMenu.classList.toggle("flex");
+        });
     </script>
-</body>
-
+  </body>
 </html>
