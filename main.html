@@ -24,6 +24,15 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+
     <script>
       tailwind.config = {
         theme: {
@@ -42,36 +51,16 @@
     </script>
   </head>
 
-  <body class="font-poppins text-gray-800 bg-gray-50">
+  <body class="font-poppins text-gray-800 bg-gray-50 overflow-x-hidden ">
     <!-- Header/Navigation -->
     <header class="sticky top-0 z-50 bg-white shadow-md">
       <nav
-        class="container mx-auto px-4 py-3 flex items-center justify-between"
+        class="container mx-auto py-3 flex items-center justify-between"
       >
         <div class="flex items-center">
           <a href="#" class="text-2xl font-bold text-primary"
             >𝕾𝖓𝖊𝖍𝖆 𝕾𝖊𝖈𝖚𝖗𝖎𝖙𝖞 𝕾𝖊𝖗𝖛𝖎𝖈𝖊𝖘</a
           >
-        </div>
-        <div class="md:hidden">
-          <button
-            id="mobile-menu-button"
-            class="text-gray-500 hover:text-primary focus:outline-none"
-          >
-            <svg
-              class="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              ></path>
-            </svg>
-          </button>
         </div>
         <ul class="hidden md:flex space-x-8">
           <li>
@@ -110,6 +99,89 @@
             >
           </li>
         </ul>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button
+            id="mobile-menu-button"
+            class="text-gray-500 hover:text-primary focus:outline-none"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="fixed top-0 right-0 bottom-72 w-56 h-auto bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out md:hidden"
+        >
+          <div class="flex justify-end p-4">
+            <button id="close-menu" class="text-gray-500 hover:text-primary">
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <ul class="flex flex-col items-center space-y-4 mt-10">
+            <li>
+              <a
+                href="#home"
+                class="text-gray-600 hover:text-secondary hover:underline"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="text-gray-600 hover:text-secondary hover:underline"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#services"
+                class="text-gray-600 hover:text-secondary hover:underline"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#features"
+                class="text-gray-600 hover:text-secondary hover:underline"
+                >Why Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="text-gray-600 hover:text-secondary hover:underline"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -119,7 +191,7 @@
       class="bg-gradient-to-br from-primary to-accent text-white py-20 md:py-28"
     >
       <div class="container mx-auto px-4">
-        <div class="flex flex-col lg:flex-row items-center justify-between">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-10">
           <div
             class="lg:w-1/2 mb-12 lg:mb-0"
             data-aos="fade-right"
@@ -149,7 +221,7 @@
             <img
               src="https://media.istockphoto.com/id/1311084713/photo/security-guards-monitoring-modern-cctv-cameras-indoors.webp?a=1&b=1&s=612x612&w=0&k=20&c=RBjfmawrijeaJmOTofr3BG4wqr1oRrk5XDixpfzYvnA="
               alt="Security Guard"
-              class="rounded-lg shadow-xl w-full h-auto"
+              class="rounded-lg shadow-xl w-auto h-auto"
             />
           </div>
         </div>
@@ -409,7 +481,7 @@
     <!-- Footer -->
     <footer class="bg-primary text-white">
       <div
-        class="px-4 py-8 text-center md:flex md:items-center md:justify-between "
+        class="px-4 py-8 text-center md:flex md:items-center md:justify-between"
       >
         <!-- About Section -->
         <div class="mb-8 md:w-1/2">
@@ -435,7 +507,7 @@
         </div>
 
         <!-- Quick Links -->
-        <div class=" mb-8 md:w-1/2">
+        <div class="mb-8 md:w-1/2">
           <h3 class="text-lg font-semibold mb-2">Quick Links</h3>
           <ul class="space-y-2 text-md">
             <li><a href="#home" class="hover:underline">Home</a></li>
@@ -447,12 +519,12 @@
         </div>
 
         <!-- Contact Section -->
-        <div class=" mb-8 md:w-1/2">
+        <div class="mb-8 md:w-1/2">
           <h3 class="text-lg font-semibold mb-2">Contact Me</h3>
           <p class="flex items-center justify-center mb-2 text-md">
             <i class="fas fa-envelope mr-2"></i> snehamaggie07@gmail.com
           </p>
-          <p class="flex items-center justify-center mb-2  text-md">
+          <p class="flex items-center justify-center mb-2 text-md">
             <i class="fas fa-phone mr-2"></i> +91 9618686007
           </p>
           <p class="flex items-center justify-center mb-4 text-md">
@@ -475,7 +547,7 @@
         </div>
       </div>
 
-      <hr class="border border-gray-700 w-11/12 mx-auto">
+      <hr class="border border-gray-700 w-11/12 mx-auto" />
 
       <div class="py-3 text-center text-sm">
         <p>&copy; 2025 Sneha Security Services. All Rights Reserved.</p>
@@ -486,13 +558,17 @@
     <script>
       AOS.init();
       //   toggle navbar function
-      document
-        .getElementById("mobile-menu-button")
-        .addEventListener("click", function () {
-          const mobileMenu = document.getElementById("mobile-menu");
-          mobileMenu.classList.toggle("hidden");
-          mobileMenu.classList.toggle("flex");
-        });
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const closeMenuButton = document.getElementById("close-menu");
+
+      mobileMenuButton.addEventListener("click", function () {
+        mobileMenu.classList.toggle("translate-x-full");
+      });
+
+      closeMenuButton.addEventListener("click", function () {
+        mobileMenu.classList.add("translate-x-full");
+      });
     </script>
   </body>
 </html>
